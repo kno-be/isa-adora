@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+  <header id="navbar">
+    <nav class="navbar-container container">
+      <a href="/" class="home-link">
+        <div class="navbar-logo">
+          <p>Isadora Aran</p>
+        </div>
+      </a>
+      <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu"
+        aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div id="navbar-menu" aria-labelledby="navbar-toggle">
+        <ul class="navbar-links">
+          <li class="navbar-item"><a class="navbar-link" href="#home">HOME</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#about">ABOUT</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#services">SERVICES</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container">
+      <h1>Experienced Lawyer</h1>
+      <p>Providing legal services for all your needs</p>
+      <a href="#services" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-container container">
+      <div class="card-one">
+        <h1>About Me</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur.
+        </p>
+        <a href="#services" class="btn">Learn More</a>
+      </div>
+      <div class="card-two">
+        <div class="square"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <h1>Contact</h1>
+      <form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" placeholder="Enter your name">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" placeholder="Enter your email">
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" placeholder="Enter your message"></textarea>
+				<input type="submit" value="Submit">
+			</form>
+    </div>
+  </section>
+
+  <footer>
+    BEKNO
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
