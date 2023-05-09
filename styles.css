@@ -30,6 +30,10 @@ body {
   margin-right: auto;
 }
 
+.section-title {
+  font-family: Montserrat;
+}
+
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 #navbar {
@@ -195,13 +199,13 @@ body {
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 .about {
-  background-color: #f3efef;
-  background-size: cover;
-  background-position: center;
   height: 860px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: #f3efef;
+  background-size: cover;
+  background-position: center;
   color: #080707;
 }
 .about-container {
@@ -260,7 +264,6 @@ body {
 }
 
 .services-container {
-  padding-top: 30px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -309,21 +312,22 @@ body {
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 .contact {
-  background-color: #0f0f0f;
-  background-size: cover;
-  background-position: center;
-  height: 600px;
+  height: 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: left;
+  background-color: #0f0f0f;
+  background-size: cover;
+  background-position: center;
   color: #fff;
 }
-/* #contact {
-	background-color: #f2f2f2;
-	padding: 50px;
-} */
+.contact-container {
+	padding-top: 30px;
+}
+form {
+  text-align: left;
+}
 
 #contact h2 {
 	text-align: center;
@@ -373,14 +377,33 @@ body {
 
 .contact .btn {
   background-color: #fff;
+  margin: auto;
   color: #444;
-  padding: 15px 30px;
   font-weight: bold;
   transition: all 0.3s ease;
 }
 
 .contact .btn:hover {
   background-color: #444;
+  color: #fff;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+
+.social-media-link {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.social-media-link i {
+  font-size: 3rem;
   color: #fff;
 }
 
@@ -396,8 +419,6 @@ body {
 }
 
 .opinions-container {
-  
-  padding-top: 30px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -444,12 +465,33 @@ body {
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
-footer {
+.footer {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: left;
+  background-position: center;
+  background-color: #0f0f0f;
+  background-size: cover;
+  color: #fff;
+}
+
+.footer-container {
+    flex-wrap: wrap;
+}
+
+
+.copyright {
+  font-family: Montserrat;
+  height:10rem;
+  width:100%;
+  padding-top: 5rem;
+  color: #fff;
+  font-size:20px;
+  letter-spacing: 0.2rem;
+  font-weight: 300;
   text-align: center;
-  padding-top: 20px;
-  height: 500px;
 }
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
@@ -483,5 +525,9 @@ footer {
   .card-one,
   .card-two {
    width: 50%;
+  }
+  .contact-container {
+    width: 30%;
+    padding-top: 30px;
   }
 }

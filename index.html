@@ -3,7 +3,9 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
@@ -61,7 +63,7 @@
 
   <section class="services" id="services">
     <div class="services-container container">
-      <h1>Services</h1>
+      <h1 class="section-title">Services</h1>
       <div class="service">
         <!-- <img src="service1.jpg" alt="Service 1"> -->
         <h3>Personal Injury</h3>
@@ -81,8 +83,7 @@
   </section>
 
   <section class="opinions" id="opinions">
-    <div class="about-container container">
-      <h1>Opinions</h1>
+    <div class="opinions-container container">
       <div class="opinion">
         <!-- <img src="client1.png" alt="Client 1"> -->
         <h3>John Doe</h3>
@@ -102,24 +103,41 @@
   </section>
 
   <section class="contact" id="contact">
-    <div class="container">
-      <h1>Contact</h1>
-      <form>
+    <div class="contact-container container">
+      <div class="section-title" style="text-align:center">
+        <h1>Contact</h1>
+      </div>
+      <div class="social-media">
+        <a href="#" class="social-media-link">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="#" class="social-media-link">
+          <i class="fab fa-instagram-square"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/bernardoknoblauch/" class="social-media-link">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+      <form class="form">
 				<label for="name">Name:</label>
 				<input type="text" id="name" name="name" placeholder="Enter your name">
 				<label for="email">Email:</label>
 				<input type="email" id="email" name="email" placeholder="Enter your email">
 				<label for="message">Message:</label>
 				<textarea id="message" name="message" placeholder="Enter your message"></textarea>
-				<input type="submit" value="Submit">
+        <div style="text-align:center">
+          <input class="btn" type="submit" value="Submit">
+        </div>
 			</form>
     </div>
   </section>
 
-  <footer>
-    BEKNO
-  </footer>
-
+  <section class="footer">
+    <div class="footer-container container">
+          <p class="copyright">Copyright &copy; BEKNO 2021.
+             <br> All rights reserved.</p>
+        </div>
+      </section>
 
   <script src="script.js"></script>
 </body>
