@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Isadora Aran</title>
 </head>
 
 <body>
@@ -31,6 +32,11 @@
           <li class="navbar-item"><a class="navbar-link" href="#services">SERVICES</a></li>
           <li class="navbar-item"><a class="navbar-link" href="#opinions">OPINIONS</a></li>
           <li class="navbar-item"><a class="navbar-link" href="#contact">CONTACT</a></li>
+          <li class="navbar-item">
+            <a class="navbar-link" id="wpp" href="#home">WHATSAPP
+              <i class="fa-brands fa-whatsapp" style="padding-left: 20px; color: green; font-size: 30px;"></i>
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -40,7 +46,12 @@
     <div class="container">
       <h1>Experienced Lawyer</h1>
       <p>Providing legal services for all your needs</p>
-      <a href="#services" class="btn">Learn More</a>
+      <div class="hero-buttons">
+        <a href="#services" class="btn">Learn More</a>
+        <a class="btn-wpp"  href="#home">MENSAGEM
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -104,12 +115,13 @@
 
   <section class="contact" id="contact">
     <div class="contact-container container">
-      <div class="section-title" style="text-align:center">
+      <div class="section-title">
         <h1>Contact</h1>
+
       </div>
       <div class="social-media">
         <a href="#" class="social-media-link">
-          <i class="fab fa-facebook"></i>
+          <i class="fa-brands fa-square-whatsapp"></i>
         </a>
         <a href="#" class="social-media-link">
           <i class="fab fa-instagram-square"></i>
@@ -126,7 +138,7 @@
 				<label for="message">Message:</label>
 				<textarea id="message" name="message" placeholder="Enter your message"></textarea>
         <div style="text-align:center">
-          <input class="btn" type="submit" value="Submit">
+          <input class="btn" type="submit" value="ENVIAR"></input>
         </div>
 			</form>
     </div>
@@ -140,6 +152,7 @@
       </section>
 
   <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/b9963ccbdf.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
