@@ -1,12 +1,35 @@
 .hero {
     height: var(--section-height);
-    
- 
     background-color: #0f0f0f;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+
+.hero .btn {
+    background-color: #fff;
+    color: #444;
+    padding: 15px 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+
+.hero .btn:hover {
+    background-color: #444;
     color: #fff;
 }

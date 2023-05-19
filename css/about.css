@@ -8,3 +8,26 @@
     background-position: center;
     color: #080707;
   }
+
+  .about h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .about .btn {
+    background-color: #130c0c;
+    color: aliceblue;
+    padding: 15px 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .about .btn:hover {
+    background-color: #444;
+    color: #fff;
+  }
