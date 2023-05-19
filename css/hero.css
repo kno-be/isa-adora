@@ -1,0 +1,12 @@
+.hero {
+    height: var(--section-height);
+    
+ 
+    background-color: #0f0f0f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}

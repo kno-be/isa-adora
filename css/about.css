@@ -1,0 +1,10 @@
+.about {
+    height:  var(--section-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f3efef;
+    background-size: cover;
+    background-position: center;
+    color: #080707;
+  }
