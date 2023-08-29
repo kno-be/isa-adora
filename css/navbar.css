@@ -7,6 +7,13 @@
     right: 0;
 }
 
+.navbar-logo{
+  font-family: "Cormorant", Sans-serif;
+  color: var(--color-one);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
 .navbar-container {
     display: flex;
     justify-content: space-between;
@@ -19,7 +26,6 @@
 .home-link,
 .navbar-link {
     color: var(--navbar-text-color);
-    /* font-weight: 400; */
     text-decoration: none;
     /* ! precisa? */
     /* display: flex; */
@@ -56,8 +62,8 @@
 .icon-bar {
     display: block;
     width: 25px;
-    height: 4px;
-    margin: 2px;
+    height: 2px;
+    margin: 3px;
     background-color: var(--navbar-text-color);
   }
   #navbar-toggle:is(:focus, :hover) .icon-bar {
