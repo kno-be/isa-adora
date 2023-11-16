@@ -2,27 +2,37 @@
   font-family: Montserrat;
   src: url(./fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
+
+@font-face {
+  font-family: Cormorant;
+  src: url(./fonts/Cormorant/Cormorant-VariableFont_wght.ttf);
+}
+
 :root {
   --navbar-font: Montserrat;
 
-  --navbar-bg-color: #0f0f0f;
+  --navbar-bg-color: rgb(53, 7, 19);
   --navbar-text-color: hsl(0, 0%, 85%);
   --navbar-text-color-focus: white;
   --navbar-bg-contrast: hsl(0, 0%, 25%);
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 html {
   overflow-x: hidden;
 }
+
 body {
-  font-family: Montserrat;
+  font-family: "Cormorant";
   line-height: 1.6;
-  
+
 }
+
 .container {
   max-width: 1000px;
   padding-left: 1.4rem;
@@ -36,14 +46,14 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  font-family: Montserrat;
+  font-family: Cormorant;
 }
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 #navbar {
-  --navbar-height: 64px;
-  font-family: Montserrat;
+  --navbar-height: 100px;
+  font-family: Cormorant;
   position: fixed;
   height: var(--navbar-height);
   background-color: var(--navbar-bg-color);
@@ -51,12 +61,14 @@ body {
   right: 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
+
 .navbar-container {
   display: flex;
   justify-content: space-between;
   height: 100%;
   align-items: center;
 }
+
 .navbar-item {
   margin: 0.4em;
   /* width: 100%; */
@@ -94,6 +106,7 @@ body {
   color: var(--navbar-text-color-focus);
   background-color: var(--navbar-bg-contrast);
 }
+
 /* .navbar-logo {
   background-color: var(--navbar-text-color-focus);
   border-radius: 50%;
@@ -105,6 +118,7 @@ body {
   font-weight: 600;
   font-size: 1.5rem;
 }
+
 #navbar-toggle {
   cursor: pointer;
   border: none;
@@ -116,6 +130,7 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+
 .icon-bar {
   display: block;
   width: 25px;
@@ -123,23 +138,29 @@ body {
   margin: 2px;
   background-color: var(--navbar-text-color);
 }
+
 #navbar-toggle:is(:focus, :hover) .icon-bar {
   background-color: var(--navbar-text-color-focus);
 }
+
 #navbar-toggle[aria-expanded="true"] .icon-bar:is(:first-child, :last-child) {
   position: absolute;
   margin: 0;
   width: 30px;
 }
+
 #navbar-toggle[aria-expanded="true"] .icon-bar:first-child {
   transform: rotate(45deg);
 }
+
 #navbar-toggle[aria-expanded="true"] .icon-bar:nth-child(2) {
   opacity: 0;
 }
+
 #navbar-toggle[aria-expanded="true"] .icon-bar:last-child {
   transform: rotate(-45deg);
 }
+
 #navbar-menu {
   position: fixed;
   top: var(--navbar-height);
@@ -149,11 +170,13 @@ body {
   left: 0;
   right: 0;
 }
-#navbar-toggle[aria-expanded="true"] + #navbar-menu {
+
+#navbar-toggle[aria-expanded="true"]+#navbar-menu {
   background-color: rgba(0, 0, 0, 0.4);
   opacity: 1;
   visibility: visible;
 }
+
 .navbar-links {
   list-style: none;
   position: absolute;
@@ -168,13 +191,13 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
-#navbar-toggle[aria-expanded="true"] + #navbar-menu .navbar-links {
+#navbar-toggle[aria-expanded="true"]+#navbar-menu .navbar-links {
   padding: 1em;
 }
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 .hero {
-  background-color: #0f0f0f;
+  background-color: rgb(53, 7, 19);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -182,51 +205,50 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: right;
   color: #fff;
 }
 
 .hero h1 {
-  font-size: 48px;
+  font-size: 32px;
+  line-height: 1;
   margin-bottom: 20px;
+  padding-top: 100px;
 }
 
 .hero p {
-  font-size: 24px;
+  font-size: 16px;
   margin-bottom: 40px;
+  color: rgb(238, 187, 67);
+  font-family: "Montserrat";
+  opacity: 70%;
 }
 
-.hero-buttons{
+.hero-buttons {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-
-}
-
-.hero .btn {
-  background-color: #fff;
-  color: #444;
-  padding: 15px 30px;
-  font-weight: bold;
-  transition: all 0.3s ease;
+  text-align: center; 
+  font-family: Montserrat;
 }
 
 .hero .btn-wpp {
-  padding: 15px 30px;
-  margin-top: 20px;
-  background-color: transparent;
+  width: 80%;
   text-decoration: none;
-  color: green;
-  border: 2px solid green;
-  border-radius: 0%;
-  font-size: 15px;
-  font-weight: bold;
+  color: white;
 }
-.hero .btn-wpp:hover {
-  background-color: #f3efef;
-}
+
 .hero .btn-wpp i {
-  padding-left: 10px ;
+  padding-right: 10px;
+}
+
+.hero .btn-wpp:hover {
+  background-color: brown;
+}
+
+.hero .btn-wpp i {
+  padding-left: 10px;
   font-size: 20px;
 
 }
@@ -240,7 +262,7 @@ body {
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 .about {
-  height: 860px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -249,8 +271,9 @@ body {
   background-position: center;
   color: #080707;
 }
+
 .about-container {
-  padding-top: 60px;
+  padding: 100px 1em;
   display: flex;
   flex-wrap: wrap;
 }
@@ -259,6 +282,7 @@ body {
   width: 100%;
   text-align: left;
 }
+
 .card-two {
   width: 100%;
   display: flex;
@@ -274,6 +298,7 @@ body {
 .about h1 {
   font-size: 48px;
   margin-bottom: 20px;
+  color: rgb(53, 7, 19);
 }
 
 .about p {
@@ -282,7 +307,7 @@ body {
 }
 
 .about .btn {
-  background-color: #130c0c;
+  background-color: rgb(53, 7, 19);
   color: aliceblue;
   padding: 15px 30px;
   font-weight: bold;
@@ -296,9 +321,9 @@ body {
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 .services {
-  background-color: #0f0f0f;
-  color: black;
-  padding: 40px 0;
+  background-color: white;
+  color: rgb(53, 7, 19);
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -306,13 +331,13 @@ body {
 
 .services-container {
   display: flex;
+  padding: 100px 1rem;
   flex-wrap: wrap;
 }
 
 .services h1 {
   width: 100%;
   font-size: 48px;
-  color: aliceblue;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -358,40 +383,42 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #0f0f0f;
+  background-color: rgb(53, 7, 19);
   background-size: cover;
   background-position: center;
   color: #fff;
 }
+
 .contact-container {
-	padding-top: 30px;
+  padding-top: 30px;
 }
+
 form {
   text-align: left;
 }
 
 #contact h2 {
-	text-align: center;
-	margin-bottom: 30px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 #contact label {
-	display: block;
-	margin-bottom: 10px;
+  display: block;
+  margin-bottom: 10px;
 }
 
 #contact input[type="text"],
 #contact input[type="email"],
 #contact textarea {
-	width: 100%;
-	padding: 10px;
-	margin-bottom: 20px;
-	border: none;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
 }
 
 #contact textarea {
-	height: 200px;
-	resize: none;
+  height: 200px;
+  resize: none;
 }
 
 #contact input[type="submit"] {
@@ -417,6 +444,7 @@ form {
   font-size: 24px;
   margin-bottom: 40px;
 }
+
 /* 
 .contact .btn {
   background-color: #fff;
@@ -515,23 +543,23 @@ form {
   align-items: center;
   text-align: left;
   background-position: center;
-  background-color: #0f0f0f;
+  background-color: rgb(53, 7, 19);
   background-size: cover;
   color: #fff;
 }
 
 .footer-container {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 
 .copyright {
   font-family: Montserrat;
-  height:10rem;
-  width:100%;
+  height: 10rem;
+  width: 100%;
   padding-top: 5rem;
   color: #fff;
-  font-size:20px;
+  font-size: 12px;
   letter-spacing: 0.2rem;
   font-weight: 300;
   text-align: center;
@@ -540,6 +568,7 @@ form {
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 @media screen and (min-width: 700px) {
+
   #navbar-toggle,
   #navbar-toggle[aria-expanded="true"] {
     display: none;
@@ -565,17 +594,37 @@ form {
     height: 100%;
   }
 
-  #wpp {
-  color: green;
-  border: 2px solid green;
-  font-weight: bold;
-  visibility: hidden;
-}
+  .hero {
+    background-image: linear-gradient(to right, brown, rgb(53, 7, 19) 70%);
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: center;
+    text-align: right; 
+    font-family: Montserrat;
+  }
   
+  .hero .btn-wpp {
+    width: auto;
+    text-decoration: none;
+    color: white;
+  }
+
+  #wpp {
+    color: green;
+    border: 2px solid green;
+    font-weight: bold;
+    visibility: hidden;
+  }
+
   .card-one,
   .card-two {
-   width: 50%;
+    width: 50%;
   }
+
   .contact-container {
     width: 30%;
     padding-top: 30px;
