@@ -330,6 +330,12 @@ body {
   color: #fff;
 }
 
+.about .picture img {
+  margin: 2rem 0;
+  width: 350px;
+  object-fit: cover;
+}
+
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 .services {
   background-color: white;
