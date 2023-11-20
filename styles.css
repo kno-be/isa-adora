@@ -8,6 +8,11 @@
   src: url(./fonts/Cormorant/Cormorant-VariableFont_wght.ttf);
 }
 
+@font-face {
+  font-family: Poppins;
+  src: url(./fonts/Poppins/);
+}
+
 :root {
   --navbar-font: Montserrat;
 
@@ -53,7 +58,7 @@ body {
 
 #navbar {
   --navbar-height: 100px;
-  font-family: Cormorant;
+  font-family: Montserrat;
   position: fixed;
   height: var(--navbar-height);
   background-color: var(--navbar-bg-color);
@@ -219,9 +224,9 @@ body {
 .hero p {
   font-size: 16px;
   margin-bottom: 40px;
-  color: rgb(238, 187, 67);
+  color: #fff;
   font-family: "Montserrat";
-  opacity: 70%;
+
 }
 
 .hero-buttons {
@@ -263,6 +268,7 @@ body {
 
 .about {
   height: auto;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -271,16 +277,20 @@ body {
   background-position: center;
   color: #080707;
 }
-
 .about-container {
-  padding: 100px 1em;
-  display: flex;
-  flex-wrap: wrap;
+  padding: 100px 1rem;
 }
 
-.card-one {
+.about-container h1 {
+ color: #821E36;
+ font-weight: 600;
+}
+
+/* .card-one {
   width: 100%;
-  text-align: left;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .card-two {
@@ -293,15 +303,20 @@ body {
   background-color: black;
   height: 100%;
   width: 80%;
-}
+} */
 
 .about h1 {
   font-size: 48px;
   margin-bottom: 20px;
-  color: rgb(53, 7, 19);
+}
+
+.about h3 {
+  color:#977018;
+  margin-bottom: 20px;
 }
 
 .about p {
+  color: #821E36;
   font-size: 24px;
   margin-bottom: 40px;
 }
