@@ -284,7 +284,6 @@ body {
 
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
 .about {
   height: auto;
   text-align: center;
@@ -673,6 +672,13 @@ form {
   .card-one,
   .card-two {
     width: 50%;
+  }
+
+  .sidebyside {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
   }
 
   .contact-container {
