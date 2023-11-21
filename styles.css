@@ -72,6 +72,16 @@ body {
   width: 50px;
 }
 
+.whatsapp {
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px;   
+    padding: 10px;   
+    border: none;    
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 #navbar {
@@ -613,6 +623,7 @@ form {
   font-weight: 300;
   text-align: center;
 }
+
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
