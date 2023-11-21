@@ -68,6 +68,10 @@ body {
   fill: black;
 }
 
+.scale hr {
+  width: 50px;
+}
+
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 #navbar {
@@ -351,6 +355,15 @@ body {
   padding: 100px 1rem;
   flex-wrap: wrap;
 }
+
+.heading {
+  width: 100%;
+}
+
+/* color: #821E36;
+font-weight: 600;
+font-size: 48px;
+margin-bottom: 20px; */
 
 .services h1 {
   width: 100%;
