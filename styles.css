@@ -415,11 +415,11 @@ margin-bottom: 20px; */
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 .contact {
-  height: 800px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   background-color: rgb(53, 7, 19);
   background-size: cover;
   background-position: center;
@@ -498,21 +498,34 @@ form {
 
 .social-media {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
 
 
 .social-media-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   text-decoration: none;
   background-color: transparent;
+  padding:2rem 0;
+  flex-direction: row;
 }
 
 .social-media-link i {
   font-size: 3rem;
   color: #fff;
+}
+
+.social-media-link span{
+  font-family: Montserrat;
+  text-decoration: none;
+  color: #fff;
+  padding-left: 3rem;
 }
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
