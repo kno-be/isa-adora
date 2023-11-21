@@ -1,0 +1,41 @@
+.hero {
+    height: var(--section-height);
+    background-color: var(--color-three);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Cormorant", Sans-serif;
+    line-height: 1;
+    
+}
+
+.hero h1 {
+    color: var(--color-five);
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.hero p {
+    color: var(--color-four);
+    font-size: 18px;
+    margin-bottom: 70px;
+}
+
+
+.hero .btn {
+    font-family: montserrat;
+    text-decoration: none;
+    background-color: var(--color-five);
+    color: #fff;
+    padding: 15px 30px;
+    transition: all 0.3s ease;
+}
+
+
+.hero .btn:hover {
+    background-color: var(--color-four);
+    color: #fff;
+}

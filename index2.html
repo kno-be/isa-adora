@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <title>My Web Page</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/hero.css">
+  <link rel="stylesheet" href="./css/about.css">
+  <link rel="stylesheet" href="./css/services.css">
+  <link rel="stylesheet" href="./css/opinions.css">
+  <link rel="stylesheet" href="./css/contact.css">
+</head>
+
+<body>
+  <header class="navbar" id="navbar">
+    <nav class="navbar-container container">
+      <a href="#" class="home-link">
+        <div class="navbar-logo">
+          <p>Isadora Aran</p>
+        </div>
+      </a>
+      <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu"
+        aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div id="navbar-menu" aria-labelledby="navbar-toggle">
+        <ul class="navbar-links">
+          <li class="navbar-item"><a class="navbar-link" href="#home">HOME</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#about">ABOUT</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#services">SERVICES</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#opinions">OPINIONS</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#contact">CONTACT</a></li>
+          <!-- <li class="navbar-item">
+                  <a class="navbar-link" id="wpp" href="#home">WHATSAPP
+                    <i class="fa-brands fa-whatsapp" style="padding-left: 20px; color: green; font-size: 30px;"></i>
+                  </a>
+                </li> -->
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <img src="./images/hero.jpeg" alt="Description of the image" width="100%"  height="200">
+      <div class="hero-container container">
+        <h1>Advocacia Previdenciária Especializada em ações contra o INSS, aposentadorias, benefícios, pensões, auxílios e tudo mais relacionado à previdência.</h1>
+        <p>Estamos aqui em busca de promover maior segurança nas pessoas através de uma advocacia humana, acessível e personalizada. Atuação em todo Brasil e Exterior.</p>
+        <div class="hero-buttons">
+          <a href="#services" class="btn">FALAR COM UM ESPECIALISTA</a>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- <section class="about" id="about">
+      <div class="about-container container">
+        <h1>About Me</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur.
+        </p>
+        <a href="#services" class="btn">Learn More</a>
+      </div>
+      </div>
+    </section> -->
+
+    <!-- <section class="services" id="services">
+      <div class="services-container container">
+        <h1 class="section-title">Services</h1>
+        <div class="service">
+          <h3>Personal Injury</h3>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mattis ex id lacus viverra, eu euismod
+            metus varius. Proin eu ligula non velit venenatis semper."</p>
+        </div>
+        <div class="service">
+          <h3>Criminal Defense</h3>
+          <p>"Fusce nec augue in lectus venenatis eleifend nec et felis. Sed vitae sapien id est dictum vestibulum vitae
+            nec turpis."</p>
+        </div>
+        <div class="service">
+          <h3>Family Law</h3>
+          <p>"Pellentesque rutrum finibus urna, a tristique ex consequat non. Sed tincidunt ante vitae justo
+            consectetur, id placerat dui posuere."</p>
+        </div>
+      </div>
+    </section> -->
+
+<!-- 
+    <section class="opinions" id="opinions">
+      <div class="opinions-container container">
+        <h1 class="section-title">Opinions</h1>
+        <div class="opinion">
+          <h3>John Doe</h3>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mattis ex id lacus viverra, eu euismod
+            metus varius. Proin eu ligula non velit venenatis semper."</p>
+        </div>
+        <div class="opinion">
+          <h3>Jane Smith</h3>
+          <p>"Fusce nec augue in lectus venenatis eleifend nec et felis. Sed vitae sapien id est dictum vestibulum vitae
+            nec turpis."</p>
+        </div>
+        <div class="opinion">
+          <h3>David Williams</h3>
+          <p>"Pellentesque rutrum finibus urna, a tristique ex consequat non. Sed tincidunt ante vitae justo
+            consectetur, id placerat dui posuere."</p>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="contact" id="contact">
+      <div class="contact-container container">
+        <form class="form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+          <div style="text-align:center">
+            <input class="btn" type="submit" value="ENVIAR"></input>
+          </div>
+        </form>
+        <div class="direct-contact-container">
+
+          <ul class="contact-list">
+            <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">City,
+                  State</span></i></li>
+
+            <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a
+                    href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li>
+
+            <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#"
+                    title="Send me an email">hitmeup@gmail.com</a></span></i></li>
+          </ul>
+
+          <hr>
+          <ul class="social-media-list">
+            <li><a href="#" target="_blank" class="contact-icon">
+                <i class="fa fa-github" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#" target="_blank" class="contact-icon">
+                <i class="fa fa-codepen" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#" target="_blank" class="contact-icon">
+                <i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#" target="_blank" class="contact-icon">
+                <i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+          <hr>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <section class="footer">
+      <div class="footer-container container">
+        <p class="copyright">Copyright &copy; BEKNO 2021.
+          <br> All rights reserved.
+        </p>
+      </div>
+    </section>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
