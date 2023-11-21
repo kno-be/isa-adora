@@ -138,6 +138,7 @@ body {
   margin-right: 0.5em;
 } */
 .navbar-logo p {
+  font-family: Cormorant;
   font-weight: 600;
   font-size: 1.5rem;
 }
@@ -253,7 +254,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center; 
-  font-family: Montserrat;
+  font-family: "Montserrat";
 }
 
 .hero .btn-wpp {
