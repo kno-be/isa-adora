@@ -19,7 +19,7 @@
   --navbar-bg-color: rgb(53, 7, 19);
   --navbar-text-color: hsl(0, 0%, 85%);
   --navbar-text-color-focus: white;
-  --navbar-bg-contrast: hsl(0, 0%, 25%);
+  --navbar-bg-contrast: brown;
 }
 
 * {
@@ -153,6 +153,14 @@ body {
   font-size: 1.5rem;
 }
 
+.navbar-logo img {
+  height: 70px;
+  padding: 10px;   
+  border: none;    
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
 #navbar-toggle {
   cursor: pointer;
   border: none;
@@ -261,16 +269,20 @@ body {
 .hero-buttons {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: right;
+  justify-content: right;
   text-align: center; 
   font-family: "Montserrat";
 }
 
 .hero .btn-wpp {
-  width: 80%;
+  font-size: 1rem;
+  width: auto;
+  margin-left: auto;
   text-decoration: none;
   color: white;
+  padding: 10px 30px;
+  border-radius: 5px;
 }
 
 .hero .btn-wpp i {
@@ -281,11 +293,11 @@ body {
   background-color: brown;
 }
 
-.hero .btn-wpp i {
+/* .hero .btn-wpp i {
   padding-left: 10px;
   font-size: 20px;
 
-}
+} */
 
 .hero .btn:hover {
   background-color: #444;
@@ -327,9 +339,29 @@ body {
 
 .about p {
   color: #821E36;
-  font-size: 24px;
+  font-size: 1.3rem;
   line-height: 110%;
   margin-bottom: 20px;
+  font-family: Montserrat;
+}
+
+.about-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; 
+  font-family: "Montserrat";
+}
+
+.about-buttons .btn-wpp {
+  color: white;
+  background-color: #821E36;
+  font-size: 1rem;
+  width: auto;
+  text-decoration: none;
+  padding: 10px 50px;
+  border-radius: 5px;
 }
 
 .about .btn {
@@ -371,7 +403,7 @@ body {
   color: #080707;
 }
 .about2-container {
-  padding: 100px 1rem;
+  padding: 100px 1rem 3rem 1rem;
 }
 
 .about2-container h1 {
@@ -393,8 +425,9 @@ body {
 
 .about2 p {
   color: #821E36;
-  font-size: 24px;
+  font-size: 1.3rem;
   margin-bottom: 40px;
+  font-family: Montserrat;
 }
 
 .about2.btn {
@@ -419,6 +452,10 @@ body {
   .about2-container {
     padding: 100px 1rem 0 1rem;
   }
+  
+.about2 p {
+  padding-left: 50px;
+}
   
 }
 
